@@ -2,12 +2,12 @@
 
 <h1>ExPhy: A Benchmark for Explicit Physical Property Learning in Multi-Object Trajectory Forecasting</h1>
 
-<!-- Add the ExPhy teaser (e.g., Figure 1 from the paper) after saving it as docs/teaser.png:
+
 <div align="center">
-  <img src="docs/benchmark.png" width="85%" />
+<img src="docs/benchmark.png" width="85%" />
 </div>
-<br />
--->
+
+
 
 [![Project](https://img.shields.io/badge/Project-ExPhy-2ea44f.svg?logo=github&logoColor=white)](https://github.com/Zest86/ExPhy)
 <!-- Add the arXiv badge here after the paper receives a public arXiv identifier. -->
@@ -87,9 +87,9 @@ We introduce **PhyODE**, a physics-guided hybrid model with two main components:
 - A differentiable trajectory solver that combines property-conditioned friction and collision dynamics with a residual Neural ODE and RK4 integration.
 
 Ground-truth physical properties are used only as training supervision and are never provided as inference inputs.
-
+<div align="center">
 <img src="docs/method.png" width="90%" />
-
+</div>
 ## Results
 
 PhyODE achieves strong in-distribution, out-of-distribution, and cross-benchmark forecasting performance. In the Long setting, it obtains the following ADE/FDE results:
@@ -103,11 +103,11 @@ PhyODE achieves strong in-distribution, out-of-distribution, and cross-benchmark
 
 On ExPhy-C, PhyODE improves the Long-horizon ADE/FDE from 1.45/2.90 to 0.97/2.00. Property-level results further show that low trajectory error does not necessarily imply accurate physical property recovery, motivating joint evaluation of both dimensions.
 
-<!-- Add the main ExPhy result visualization after saving it as docs/results.png:
+
 <div align="center">
     <img src="docs/results.png" width="85%" />
 </div>
--->
+
 
 ## Getting Started
 
